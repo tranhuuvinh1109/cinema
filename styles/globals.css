@@ -4,14 +4,27 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 
+:root {
+  --bg-color: #13151f;
+  --bg-primary: #eb315a;
+  --text-color: #ffffff;
+  --text-primary: #eb315a;
+  --box-shadow: #000000;
+  --border-primary: #eb315a;
+  --btn-hover: #fece50;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-  font-family: 'Gochi Hand', cursive;
+  /* font-family: 'Gochi Hand', cursive;
+  font-family: 'Poppins', sans-serif; */
   font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  background-color: var(--bg-color);
 }
 
 a {
@@ -25,12 +38,80 @@ a {
 .container {
   padding: 0 60px;
 }
-
-.navbar-item {
-	color: #fff;
-  font-size: 18px;
+.poster-item {
+  box-shadow: 0 0 20px var(--box-shadow);
+  margin: 320px 15px 50px;
+  padding-top: 32px;
+  padding-bottom: 10px;
+}
+.poster-item-review {
+  margin: 4px 0px 6px 0px;
+}
+.poster-item-cast-more {
+  height: 45px;
+  line-height: 45px;
+  border-radius: 100%;
+  max-width: 45px;
+  border: 2px solid var(--bg-primary);
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.theme-btn-primary {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  color: var(--text-color);
+  border-radius: 35px;
+  padding: 5px 25px;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
   font-weight: 500;
 }
-.navbar-item a {
-	color: #fff;
+
+
+.slide {
+  transform: scale(0.2);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+
+.activeSlide {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.slick-list {
+  padding: 0 !important;
+}
+.spotlight-item {
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.spotlight-item:hover .img-spotlight{
+  transform: scale(1.2);
+  transition: 0.9s;
+}
+.spotlight-item:hover .btn-play {
+  display: block;
+}
+.btn-play:hover {
+  color: var(--btn-hover);
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  /* width: 500px !important;
+  height: 300px; */
+}
+.bg-linear {
+  background-image:
+  linear-gradient(to bottom, rgba(3, 3, 3, 0.98), rgba(71, 69, 71, 0.73))
+}
+.footer {
+  padding: 90px 0 30px;
 }

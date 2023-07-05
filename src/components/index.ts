@@ -1,2 +1,10 @@
 export { default as Header } from './Header/Header';
-export { default as Slider } from './Slider/Slider';
+export { default as Footer } from './Footer/Footer';
+export { default as Carousel } from './Carousel/Carousel';
+export { default as MovieItem } from './MovieItem/MovieItem';
+export { default as Poster } from './Poster/Poster';
+export { default as PosterItem } from './PosterItem/PosterItem';
+export { default as Spotlight } from './Spotlight/Spotlight';
+export { default as SpotlightItem } from './SpotlightItem/SpotlightItem';
+export { default as Divider } from './Divider/Divider';
+export { default as TrailerMovie } from './TrailerMovie/TrailerMovie';
